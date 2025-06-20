@@ -5,6 +5,7 @@
 
 import { db } from "@/utils/dbConnection";
 import { CommentForm } from "@/components/CommentForm";
+import { CommentBox } from "@/components/CommentBox";
 
 export default async function postId({ params }) {
   const param = await params;
@@ -16,7 +17,7 @@ export default async function postId({ params }) {
   );
 
   const storybeatData = storybeat.rows;
-  console.log(storybeatData, "DATA");
+  console.log(storybeatData, "DATA"); //for testing - the DATA was so i could find it easier in the middle of everything else
 
   return (
     <>
@@ -26,6 +27,7 @@ export default async function postId({ params }) {
         </div>
       ))}
       <CommentForm paramId={paramId} />
+      <CommentBox paramId={paramId} />
     </>
   );
 }

@@ -49,3 +49,4 @@ export function CommentForm({ paramId }) {
 }
 
 //this component can be re-used in all the dynamic pages - the paramid should identify which page the user was viewing when they submitted (and therefore which storybeat they are reacting to)
+//i now need to create a component to hold the comments
