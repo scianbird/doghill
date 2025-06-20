@@ -7,8 +7,7 @@
   blurb_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   location_name VARCHAR(255) NOT NULL,
   location_img TEXT NOT NULL,
-  blurb TEXT NOT NULL,
-  comments_id INT) 
+  blurb TEXT NOT NULL) 
 )
  */
 
@@ -19,4 +18,13 @@
   The whistling never stops.' 
 ) */
 
--- I inserted one just to test that the mapping would work, and then added a few more in a batch query:
+-- I inserted one just to test that the mapping would work, and once I had that functionality working I added the comments table: 
+/*
+CREATE TABLE IF NOT EXISTS doghill_comments (
+    comment_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    username VARCHAR(255) NOT NULL,
+    profile_image TEXT NOT NULL,
+    comment TEXT NOT NULL,
+    location_name TEXT REFERENCES "location_blurbs" < this is because the param is passed as a string so using the id will not work. I had to changet the primary key of the location table to be location name so the relation would work, but I did this using the GUI so I could keep track of everything
+)
+INSERT INTO doghill_comments (username, profile_image, comment) VALUES ('Amelia', 'https://openmoji.org/data/color/svg/1F64D-200D-2640-FE0F.svg', 'Did you hear? People are saying that the fishermen are leaving their catches to rot on the banks of the river') */
