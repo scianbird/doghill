@@ -20,13 +20,13 @@ export default function Home() {
         </p>
 
         <p>
-          There&aposs not much to do here: you could spend your time hunting for
-          bones to carve, shopping for local fruit preseves or bakes, or swing
-          by and listen to the band as they play in the town hall!
+          There&apos;s not much to do here: you could spend your time hunting
+          for bones to carve, shopping for local fruit preseves or bakes, or
+          swing by and listen to the band as they play in the town hall!
         </p>
 
         <p>
-          Just make sure you are inside before the sun sets, because that&aposs
+          Just make sure you are inside before the sun sets, because that&apos;s
           when the wolves come out. Every night they circle the town: wade
           through the river, slink out from the shadows and methodically hunt
           anyone foolish enough to be caught outside.{" "}
@@ -38,7 +38,7 @@ export default function Home() {
         </p>
 
         <p>
-          It&aposs also said that the wolves were once people who lived and
+          It&apos;s also said that the wolves were once people who lived and
           worked in Dog Hill, just like you.
         </p>
 

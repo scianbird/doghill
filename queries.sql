@@ -8,7 +8,7 @@
   location_name VARCHAR(255) NOT NULL,
   location_img TEXT NOT NULL,
   blurb TEXT NOT NULL,
-  comments_id INT)
+  comments_id INT) 
 )
  */
 
@@ -18,3 +18,5 @@
   
   The whistling never stops.' 
 ) */
+
+-- I inserted one just to test that the mapping would work, and then added a few more in a batch query:
