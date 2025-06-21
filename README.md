@@ -1,7 +1,5 @@
 # DOG HILL
 
-## an RP blog
-
 Welcome to Dog Hill, a small town nestled beside a healthy perch-river and hidden in the shadows of a dark and unforgiving forest. There's not much to do here: you could spend your time hunting for bones to carve, shopping for local fruit preseves or bakes, or swing by and listen to the band as they play in the town hall!
 
 Just make sure you are inside before the sun sets, because that's when the wolves come out. Every night they circle the town: wade through the river, slink out from the shadows and methodically hunt anyone foolish enough to be caught outside. Their legs are long, their teeth are sharp, and it is said that once you have looked in their eyes you will slowly go mad.
