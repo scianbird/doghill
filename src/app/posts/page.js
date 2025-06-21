@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default async function LocationPage({ searchParams }) {
   const name = (await db.query(`SELECT * FROM location_blurbs`)).rows;
-  //to sort i will just write a function that will order alphabetically
+  //to sort i will just write a function that will order based on the id of the place, as "newest to oldest"
   const query = await searchParams;
   const sort = query?.sort || "asc";
 
