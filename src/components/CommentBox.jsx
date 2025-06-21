@@ -1,4 +1,5 @@
 import { db } from "@/utils/dbConnection";
+import { revalidatePath } from "next/cache";
 
 export async function CommentBox({ paramId }) {
   const comments = await db.query(

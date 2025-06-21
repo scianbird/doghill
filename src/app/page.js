@@ -3,12 +3,14 @@
 
 //I will try to make this page include an "under the rug" footer - in order to make the scrolling work I will make each div be at least 100vph
 //https://www.youtube.com/watch?v=2IbRtjez6ag intersection observer
+//https://www.youtube.com/watch?v=UVhaufz6FZc framer motion text
+//have a sound button that will play wolves howling?https://github.com/NuroDev/nuro.dev/blob/main/src/lib/sounds.ts#L6
 import Image from "next/image";
 import "./homepage.css";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div>
+    <div className="bodyDiv">
       <div className="titleDiv">
         <h1>DOGHILL</h1>
       </div>

@@ -1,4 +1,4 @@
-body {
+.bodyDiv {
   background: linear-gradient(
     180deg,
     rgba(231, 158, 79, 1) 0%,
@@ -6,7 +6,9 @@ body {
     rgba(115, 64, 70, 1) 65%,
     rgba(50, 31, 40, 1) 98%
   );
+  animation: body 1s linear;
   /* setting the gradient to look like a sunset because it's about werewolves */
+
   scroll-behavior: smooth;
 }
 
@@ -15,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10rem;
+  font-size: 20dvw;
   color: #fffbeb;
 }
 

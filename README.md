@@ -33,3 +33,5 @@ I chose a colour palette from <a href="https://colorhunt.co/palette/321f28734046
 ⭐️ <a href="https://webaim.org/resources/contrastchecker/"> WCAG Contrast Checker</a>
 
 ⭐️ <a href="https://colorhunt.co/palette/321f28734046a05344e79e4f"> Colour Hunt Colour Palette</a>
+
+⭐️ <a href="https://www.alamy.com"> Placeholder Images</a>
