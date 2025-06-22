@@ -35,7 +35,7 @@ export function CommentForm({ paramId }) {
         placeholder="write your character name!"
       />
       <label htmlFor="profile_image">Profile image:</label>
-      <input type="text" name="comment" placeholder="url please" />
+      <input type="text" name="avatar" placeholder="url please" />
       <label htmlFor="comment">Comment:</label>
       <input
         type="text"

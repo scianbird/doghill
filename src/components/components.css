@@ -1,0 +1,105 @@
+/* .sideBar {
+  display: flex;
+  position: fixed;
+  right: 0;
+  height: 80dvh;
+  width: 2dvw;
+}
+.sideBar:hover {
+  width: 10dvw;
+  transition: 1.5s;
+}
+.sideBarText {
+  display: flex;
+  flex-direction: column;
+} */
+/* not needed anymore ^  */
+
+/* HERO TEXT */
+
+.welcomepageCSS {
+  background-color: #220901;
+}
+
+.welcomeText {
+  display: flex;
+  color: #941b0c;
+  font-family: var(--font-caps);
+  font-size: 9dvw;
+  text-shadow: 2px 2px #f6aa1c;
+}
+.welcomeText2 {
+  display: flex;
+  font-family: var(--font-caps);
+  font-size: 15dvw;
+  color: #941b0c;
+  text-shadow: 2px 2px #f6aa1c;
+  margin-top: -10dvh;
+}
+.welcomeDiv {
+  background-color: transparent;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theLORE {
+  height: 100%;
+  color: #fffdf9;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+p {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.lastLine {
+  margin-top: 10px;
+}
+
+.headerDiv {
+  display: flex;
+}
+
+.footerDiv {
+  display: flex;
+}
+
+/* i need another breakpoint for ipad based on the responsive dev tools in chrome, but for now .. don't open it on an ipad!! */
+@media only screen and (max-width: 600px) {
+  .welcomeText {
+    color: #941b0c;
+    font-family: var(--font-caps);
+    font-size: 9dvw;
+    text-shadow: 2px 2px #f6aa1c;
+  }
+  .welcomeText2 {
+    font-family: var(--font-caps);
+    font-size: 15dvw;
+    color: #941b0c;
+    text-shadow: 2px 2px #f6aa1c;
+    margin-top: 0.1dvh;
+  }
+
+  .theLORE {
+    height: 100%;
+    color: #fffdf9;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+
+  p {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .lastLine {
+    margin-top: 10px;
+  }
+}
