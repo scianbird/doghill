@@ -1,0 +1,27 @@
+.locationBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageBox {
+  width: 90dvw;
+}
+.nameLink {
+  color: #621708;
+  font-size: x-large;
+  display: flex;
+  justify-self: center;
+}
+
+.nameLink:hover {
+  color: #bc3908;
+  cursor: pointer;
+}
+
+.theButtons {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+}
