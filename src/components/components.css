@@ -62,12 +62,107 @@ p {
   margin-top: 10px;
 }
 
+/* HEADER */
+
 .headerDiv {
   display: flex;
+  background-color: #220901;
+  color: #941b0c;
+  justify-content: space-between;
 }
 
+.icondiv {
+  background-color: #f6aa1c;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+/* emotionally lashing out at the fact I can't get images to work by doing css art at this point */
+
+.headerFakeLink {
+  padding: 5px;
+}
+.headerFakeLink:hover {
+  cursor: pointer;
+  color: #f6aa1c;
+  transition: 1s;
+}
+
+/* FOOTER */
 .footerDiv {
   display: flex;
+  background-color: #220901;
+  color: #941b0c;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.homeLink:hover {
+  color: #f6aa1c;
+  transition: 1s;
+  transform: scale(1.3);
+}
+.townMapLink:hover {
+  color: #f6aa1c;
+  transition: 1s;
+  transform: scale(1.3);
+}
+
+.commentForm {
+  background-color: #220901;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+label {
+  color: #bc3908;
+  font-family: var(--font-cabin);
+  font-size: 1.9rem;
+}
+
+input {
+  background-color: #fffdf9;
+  color: #220901;
+}
+
+.commentBox {
+  height: 10rem;
+  inline-size: auto;
+}
+
+.submitButton {
+  background-color: #f6aa1c;
+  margin-top: 30px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.fakeIcon {
+  background-color: #bc3908;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.groupUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.usernameH1 {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.commentH2 {
+  width: 80dvw;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /* i need another breakpoint for ipad based on the responsive dev tools in chrome, but for now .. don't open it on an ipad!! */
@@ -101,5 +196,14 @@ p {
 
   .lastLine {
     margin-top: 10px;
+  }
+  .icondiv {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .groupUp {
+    margin-left: 10px;
   }
 }

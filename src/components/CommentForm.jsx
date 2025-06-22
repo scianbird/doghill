@@ -6,6 +6,7 @@
 
 import { db } from "@/utils/dbConnection";
 import { revalidatePath } from "next/cache";
+import "./components.css";
 
 export function CommentForm({ paramId }) {
   async function handleSubmit(formData) {
@@ -27,23 +28,26 @@ export function CommentForm({ paramId }) {
   //build the form in return - include some placeholders to give people an idea
 
   return (
-    <form action={handleSubmit}>
+    <form className="commentForm" action={handleSubmit}>
       <label htmlFor="username">Character Name:</label>
       <input
         type="text"
         name="username"
-        placeholder="write your character name!"
+        placeholder="Write your character name!"
+        required
       />
-      <label htmlFor="profile_image">Profile image:</label>
-      <input type="text" name="avatar" placeholder="url please" />
       <label htmlFor="comment">Comment:</label>
       <input
+        className="commentBox"
         type="text"
         name="comment"
-        placeholder="react in-character to the storybeat!"
+        placeholder="React in-character to the storybeat!"
+        required
       />
 
-      <button type="submit">Post</button>
+      <button className="submitButton" type="submit">
+        Post
+      </button>
     </form>
   );
 }

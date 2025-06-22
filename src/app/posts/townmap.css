@@ -1,27 +1,62 @@
+body {
+  background-color: #220901;
+  color: #fffdf9;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.introPassage {
+  padding: 1rem;
+}
+/* some of the clunkiest css ever here today */
+
 .locationBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
-.imageBox {
-  width: 90dvw;
-}
 .nameLink {
-  color: #621708;
-  font-size: x-large;
+  color: #941b0c;
   display: flex;
   justify-self: center;
+  font-size: 1.9rem;
 }
 
 .nameLink:hover {
-  color: #bc3908;
+  color: #f6aa1c;
+  transition: 1s;
   cursor: pointer;
 }
 
 .theButtons {
+  color: #941b0c;
+}
+
+.theButtons:hover {
+  color: #f6aa1c;
+  transition: 1s;
+}
+
+.imageDiv {
   display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  gap: 1.5rem;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.imageClass {
+  display: flex;
+  width: 500px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .nameLink {
+    font-size: 1.2rem;
+  }
 }

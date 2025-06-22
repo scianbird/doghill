@@ -7,6 +7,10 @@ import { db } from "@/utils/dbConnection";
 import Link from "next/link";
 import Image from "next/image";
 import "@/app/posts/townmap.css";
+import butcher from "@/../public/images/butcher.png";
+import claraDIY from "@/../public/images/claraDIY.png";
+import riverside from "@/../public/images/riverside.png";
+import townhall from "@/../public/images/townhall.png";
 
 export default async function LocationPage({ searchParams }) {
   const name = (await db.query(`SELECT * FROM location_blurbs`)).rows;
@@ -24,21 +28,31 @@ export default async function LocationPage({ searchParams }) {
 
   return (
     <>
-      <div className="theButtons">
-        <Link href="/posts?sort=asc">Walking from the riverbank</Link>
-        <Link href="/posts?sort=desc">Walking from the forest</Link>
+      <div className="introPassage">
+        {" "}
+        It may seem silly, but even a town as small as DOGHILL has 2 ways of
+        looking at it. You could{" "}
+        <Link className="theButtons" href="/posts?sort=asc">
+          look from the riverbank
+        </Link>
+        . Or you could{" "}
+        <Link className="theButtons" href="/posts?sort=desc">
+          look from the forest.
+        </Link>
+        <p>There are a few places to visit in town.</p>
       </div>
+
       <div className="locationBox">
         {name.map((post) => {
           return (
             <div className="locationList" key={post.blurb_id}>
-              <Image
+              {/*  <Image
                 className="imageBox"
                 src={post.location_img}
                 alt="picture"
                 width={300}
-                height={300} //I tried to add a blur placeholder, but it asked instead for a "blurDataURL" property - i understand this conceptually, but it's been moved to the bottom of my list as I am working on other issues right now and testing even on low-tier mobile the images take a bit but not forever .. so it will have to do . for now
-              />
+                height={300} //I tried to add a blur placeholder, but it asked instead for a "blurDataURL" property . ALSO NEVER MIND .. it was working locally with only the file path in the database but once pushed obviously that didn't work .. every time I tried to fix it it broke something else so I left it alone.. below are the images just because I made them and didn't want them to go to waste (￢_￢;)	 me .. defeated my image hosting .. who saw that coming (everyone)
+              /> */}
               <Link className="nameLink" href={`/posts/${post.location_name}`}>
                 {post.location_name_format}
               </Link>
@@ -49,3 +63,36 @@ export default async function LocationPage({ searchParams }) {
     </>
   );
 }
+/*    <div className="imageDiv">
+          {" "}
+          <Image
+            key={0o1}
+            src={townhall}
+            alt="A clip-art image of a town hall. There is a clock on top of the hall."
+            placeholder="blur"
+            className="imageClass"
+          />
+          <Image
+            key={0o2}
+            src={claraDIY}
+            alt="A clip-art image of a DIY hardware shop. There is a poster on the front wall advertising help for hunters."
+            placeholder="blur"
+            className="imageClass"
+          />{" "}
+          <Image
+            key={0o3}
+            src={butcher}
+            alt="A clip-art image of a butcher shop. There is a striped awning above the door."
+            s
+            placeholder="blur"
+            className="imageClass"
+          />
+          <Image
+            key={0o4}
+            src={riverside}
+            alt="A clip-art image of a riverside. There are bull rushes growing around the water."
+            placeholder="blur"
+            className="imageClass"
+          />
+        </div> TO BE HONEST even this was not working ... I was getting this error 
+If you want to write it to the DOM, pass a string instead: s="true" or s={value.toString()} and I know it is literally telling me what to do but .. I can't make it work */

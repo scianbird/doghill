@@ -6,6 +6,7 @@
 import { db } from "@/utils/dbConnection";
 import { CommentForm } from "@/components/CommentForm";
 import { CommentBox } from "@/components/CommentBox";
+import "@/app/posts/page.css";
 
 export default async function postId({ params }) {
   const param = await params;
@@ -21,11 +22,13 @@ export default async function postId({ params }) {
 
   return (
     <>
-      {storybeatData.map((lore) => (
-        <div key={lore.blurb_id}>
-          <h1>{lore.blurb}</h1>
-        </div>
-      ))}
+      <div className="theStory">
+        {storybeatData.map((lore) => (
+          <div key={lore.blurb_id}>
+            <p>{lore.blurb}</p>
+          </div>
+        ))}
+      </div>
       <CommentForm paramId={paramId} />
       <CommentBox paramId={paramId} />
     </>
