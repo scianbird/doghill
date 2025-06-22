@@ -65,8 +65,8 @@ export default function HeroText() {
         >
           <p>
             Their legs are long, their teeth are sharp, and it&apos;s said that
-            once one looks at you, it will come back night after night until it
-            finally catches you.
+            once a wolf looks at you, it will come back night after night until
+            it finally catches you.
           </p>
         </motion.div>
         <motion.div
