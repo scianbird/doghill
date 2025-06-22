@@ -5,11 +5,11 @@ import "./components.css";
 export default function Footer() {
   return (
     <div className="footerDiv">
-      <Link href={`/posts`}>
-        <h1 className="townMapLink">Town Map</h1>
-      </Link>
       <Link href={`/`}>
         <h1 className="homeLink">Home</h1>
+      </Link>
+      <Link href={`/posts`}>
+        <h1 className="townMapLink">Town Map</h1>
       </Link>
     </div>
   );

@@ -4,7 +4,6 @@
 //have a sound button that will play wolves howling?
 //https://www.youtube.com/watch?v=U1T_J6Odoqg&t=16s
 
-import "./homepage.css";
 import HeroText from "@/components/HeroText";
 export default function Home() {
   return <HeroText />;
